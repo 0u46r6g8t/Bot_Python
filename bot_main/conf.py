@@ -12,7 +12,6 @@ class WhatsappBot():
 
 	list_command = {
 		"help": "Bot funcionado com sucesso! Por favor espere um momento que já já responderei...",
-		"Man": "Dae jovem!",
 		"exit":"Obrigado por utilizar o bot."
 	}
 
@@ -32,7 +31,7 @@ class WhatsappBot():
 				time.sleep(5)
 				print(" [ + ] Clicando no elemento!")
 				checkbox.click()
-				
+
 				checkbox.send_keys("{}".format(list_command[command]))
 
 				buttonSend = self.drive.find_element_by_xpath('//span[@data-icon="send"]')
@@ -40,6 +39,7 @@ class WhatsappBot():
 				print(" [ + ] Enviando Mensagem!")
 				buttonSend.click()
 				time.sleep(20)
+
 				self.drive.get("https://web.whatsapp.com")
 			except:
 				self.drive.get("https://web.whatsapp.com")
