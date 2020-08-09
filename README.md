@@ -17,5 +17,5 @@ Os comandos serão lidos junto com uma barra invertida or (contra barra), sendo 
   
     -> \help - Para que retorne alguma ajuda especifica
   
-        @Copyright L3ont3chh
+@Copyright L3ont3chh
     
